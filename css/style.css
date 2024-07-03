@@ -1,0 +1,40 @@
+nav {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.banner{
+    text-align: center;
+    height: 200px;
+    background-color: rgb(217, 217, 217);
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+
+
+.crad{
+    text-align: center;
+    height: 200px;
+    background-color: rgb(207, 152, 89);
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+.blog{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    border: 1px solid #333;
+
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    padding: 20px;
+}
