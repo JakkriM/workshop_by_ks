@@ -1,43 +1,79 @@
-nav {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: sticky;
-    top: 0;
+body {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+
+    background-color: #F5F5F7;
 }
 
-.banner{
-    text-align: center;
-    height: 200px;
-    background-color: rgb(217, 217, 217);
-    border: 1px solid #333;
-    padding: 20px;
+.workshop-section {
+    padding: 50px 10%;
+    min-height: 100vh;
+    display: block;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
-
-.crad{
-    text-align: center;
-    height: 200px;
-    background-color: rgb(207, 152, 89);
-    border: 1px solid #333;
-    padding: 20px;
+.btn-container {
+    width: 400px;
 }
 
-.blog{
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    height: 200px;
-    border: 1px solid #333;
+.btn {
+    width: 100%;
+    font-size: 36px;
+    /* fill style  */
 
 }
 
-footer{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    height: 100px;
-    padding: 20px;
+.btn>i {
+    font-size: 40px;
 }
+
+.btn-primary {
+    background-color: #0071E3;
+    color: #FFF !important;
+}
+
+.btn-secondary {
+    background-color: #AC39FF;
+    color: #FFF !important;
+}
+
+.box {
+    padding: 20px 44px;
+    background-color: #FFF;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+}
+
+.stripe {
+    width: 50px;
+    height: 6px;
+    background-color: #AC39FF;
+    border-radius: 3px;
+}
+
+
+/* fill the blank */
+#MyListItem {}
+
+#MyListItem>ul {
+    margin-top: 30px;
+}
+
+#MyListItem>ul>li {}
+
+#MyListItem>ul>li>span {
+    margin-right: 10px;
+}
+
+/* ------------- */

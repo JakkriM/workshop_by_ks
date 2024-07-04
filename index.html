@@ -1,69 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop - flex</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML CSS Laout</title>
-</head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-<link rel="stylesheet" href="css/style.css">
-
-<body>
-
-    <!-- nav start -->
-    <nav>
-        Navbar
-    </nav>
-    <!-- nav end -->
-
-    <!-- container start -->
-    <div class="container">
-        <!-- banner start -->
-        <section class="row">
-            <div class="col-md-6 banner">
-                <h1>Hero</h1>
-            </div>
-            <div class="col-12 col-md-6 banner">Img</div>
-            <div class="col-12 col-md-6 banner">
-                img
-            </div>
-            <div class="col-12 col-md-6 banner">
-                <h3>Some Text</h3>
-                <p> Some Paragraph</p>
-            </div>
-        </section>
-        <!-- banner end -->
-
-        <!-- crad start -->
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 crad">Crad</div>
-            <div class="col-12 col-md-6 col-lg-3 crad">Crad</div>
-            <div class="col-12 col-md-6 col-lg-3 crad">Crad</div>
-            <div class="col-12 col-md-6 col-lg-3 crad">Crad</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="workshop-section">
+      <h1>Section 1: <small>Button width icon.</small></h1>
+      <div class="content">
+        <div class="btn-container">
+          <a href="#MoreDetail" class="btn btn-primary">
+            More Detail
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a href="#Greeting" class="btn btn-secondary">
+            Greeting
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
         </div>
-        <!-- crad end -->
-
-        <!-- blog start -->
-        <div class="row">
-            <div class="col-4 blog">
-                <h3>Some Text</h3>
-                <p> Some Paragraph</p>
-            </div>
-            <div class="col-8 blog">img</div>
-        </div>
-        <!-- blog start -->
-
-        <!-- footer start -->
+      </div>
     </div>
-    <!-- container ends -->
-    <footer>
-        Footer
-    </footer>
-    <!-- footer end -->
 
-</body>
-
+    <div class="workshop-section">
+      <h1>Section 2: <small>List. </small></h1>
+      <div class="content">
+        <div id="MyListItem" class="box">
+          <h2>My list item</h2>
+          <div class="stripe"></div>
+          <ul>
+            <li><span>Tabula Rasa</span> Simple Robe</li>
+            <li><span>Starkonja's Head</span> Silken Hood</li>
+            <li><span>Inpulsa's Broken Heart</span> Sadist Garb</li>
+            <li><span>Wilma's Requital</span> Solaris Circlet</li>
+            <li><span>Abhorrent Interrogation</span> Ambush Mitts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
