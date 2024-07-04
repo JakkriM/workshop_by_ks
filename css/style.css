@@ -70,9 +70,12 @@ body {
     margin-top: 30px;
 }
 
-#MyListItem>ul>li {}
+#MyListItem>ul>li {
+    color: #6E6E73;
+}
 
 #MyListItem>ul>li>span {
+    color: #1D1D1F;
     margin-right: 10px;
 }
 
