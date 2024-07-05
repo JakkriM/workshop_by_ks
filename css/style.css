@@ -80,18 +80,23 @@ body {
 #MyListItem>ul {
     margin-top: 30px;
     padding: 0;
+    list-style: none;
+
 }
 
 #MyListItem>ul>li {
     color: #6E6E73;
-    list-style: none;
     margin-bottom: 40px;
     display: flex;
+    align-items: center;
 }
+
 #MyListItem>ul>li>span {
+    display: flex;
+    align-self: flex-start;
     color: #1D1D1F;
     margin-right: 10px;
-    width: 200px;
+    min-width: 190px;
 
 }
 
