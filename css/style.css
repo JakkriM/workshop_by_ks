@@ -72,7 +72,10 @@ body {
 
 
 /* fill the blank */
-#MyListItem {}
+#MyListItem {
+    display: flex;
+    flex-direction: column;
+}
 
 #MyListItem>ul {
     margin-top: 30px;
@@ -83,13 +86,13 @@ body {
     color: #6E6E73;
     list-style: none;
     margin-bottom: 40px;
+    display: flex;
 }
-
 #MyListItem>ul>li>span {
     color: #1D1D1F;
     margin-right: 10px;
-    display: inline-block;
     width: 200px;
+
 }
 
 /* ------------- */
