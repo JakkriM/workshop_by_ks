@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script type="text/javascript" src="./js/demo-dom.js"></script>
   </head>
   <body>
     <div class="workshop-section">
@@ -37,15 +39,20 @@
         <div id="MyListItem" class="box">
           <h2>My list item</h2>
           <div class="stripe"></div>
-          <ul>
-            <li><span>Tabula Rasa</span> Simple Robe</li>
-            <li><span>Starkonja's Head</span> Silken Hood</li>
-            <li><span>Inpulsa's Broken Heart</span> Sadist Garb</li>
-            <li><span>Wilma's Requital</span> Solaris Circlet</li>
-            <li><span>Abhorrent Interrogation </span> Ambush Mitts</li>
-          </ul>
+          <ul id="ListItem"></ul>
         </div>
       </div>
+    </div>
+
+    <div class="workshop-section">
+      <h1>Section 3: <small>Demo. </small></h1>
+      <h2 id="sectionTitel">Title...</h2>
+      <form action="">
+        <input type="text" onclick="handleClick(event)" />
+        <input type="text" onclick="handleClick(event)" />
+        <button>add</button>
+        <button>del</button>
+      </form>
     </div>
   </body>
 </html>
