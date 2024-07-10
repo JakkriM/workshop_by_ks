@@ -100,4 +100,45 @@ body {
 
 }
 
+
+.contentdemo{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+form>label{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+form>input{
+    margin-right: 10px;
+}
+
+form>#age{
+    max-width: 40px;
+}
+
+.btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    background-color: #AC39FF;
+    width: 50px;
+    cursor: pointer;
+}
+
+
+
 /* ------------- */
