@@ -1,5 +1,16 @@
 let listname = new Array();
 
+listname = [{
+    fname : "Fname",
+    lname : "Lname",
+    age : "Age"
+}]
+
+listname.push({
+    fname : "Fname1",
+    lname : "Lname2",
+    age : "Age3"
+});
 
 function addData(){
     let Fname = document.getElementById("fname").value;
@@ -9,17 +20,15 @@ function addData(){
 }
 
 function storageData(Fname,Lname,Age){
-    listname.push([Fname,Lname,Age]);
     
+listname.push({
+    fname : Fname,
+    lname : Lname,
+    age : Age
+});
 }
 
 
-// function showData(){
-//     listname.map((listname) => {
-//         return listname;
-//       });
-// }
-
-// console.log(showData());
-
-
+let tide = listname.forEach(listname => { 
+   return  `<li><span>${listname.fname} ${listname.lname}</span> ${listname.age
+      }</li>`    });
