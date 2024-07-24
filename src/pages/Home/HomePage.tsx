@@ -1,18 +1,14 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
-import exampleAPI from "../../services/exampleAPI";
 
 const HomePage = () => {
-  const [users, setUsers] = useState<any>(null);
+  const testA = "AA";
+  const testB = "AA";
 
-  const loadUsers = async () => {
-    const result = await exampleAPI.getAllUsers();
-    setUsers(result);
-  };
+  const result = { testA, testB };
 
   useEffect(() => {
-    loadUsers();
-    console.log("Current Users :", users);
+    console.log(result);
   }, []);
 
   return (

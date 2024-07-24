@@ -1,15 +1,16 @@
 import axios from "axios";
+import { IUserData } from "../interfaces/user";
 
 const baseUrl = import.meta.env.VITE_API_URL;
 
 class ExampleAPI {
-  public getAllUsers() {
+  public getAllUsers(): Promise<IUserData[]> {
     const result = axios({
       url: `${baseUrl}/users`,
       method: "GET",
     })
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         return res.data;
       })
       .catch((error) => {
