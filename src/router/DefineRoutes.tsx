@@ -6,6 +6,7 @@ import UsersPage from "../pages/Users/UsersPage";
 import DemoPage from "../pages/DemoPage/DemoPage";
 import Demo1 from "../pages/DemoPage/Demo1";
 import Demo2 from "../pages/DemoPage/Demo2";
+import PrimeReactPage from "../pages/PrimeReactPage/PrimeReactPage";
 
 const createRoute = (
   name: string,
@@ -33,4 +34,5 @@ export const DefinedRoutes: IDefineRoutes[] = [
     createRoute("Demo 1", "demo1", { element: <Demo1 /> }),
     createRoute("Demo 2", "demo2", { element: <Demo2 /> }),
   ]),
+  createRoute("Prime React", "/prime-react", { element: <PrimeReactPage /> }),
 ];
