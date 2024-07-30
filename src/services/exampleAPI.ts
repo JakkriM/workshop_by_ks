@@ -1,23 +1,12 @@
-import axios from "axios";
 import { IUserData } from "../interfaces/user";
+import api from "./apiHelper";
+import { IBaseResponse } from "../interfaces/service";
 
-const baseUrl = import.meta.env.VITE_API_URL;
+const apiPath = "users";
 
 class ExampleAPI {
-  public getAllUsers(): Promise<IUserData[]> {
-    const result = axios({
-      url: `${baseUrl}/users`,
-      method: "GET",
-    })
-      .then((res) => {
-        // console.log(res);
-        return res.data;
-      })
-      .catch((error) => {
-        console.log(":: Error ::");
-        console.log(error);
-      });
-    return result;
+  public getAllUsers(): Promise<IBaseResponse<IUserData[]>> {
+    return api.GET<IUserData[]>(apiPath) as Promise<IBaseResponse<IUserData[]>>;
   }
 }
 

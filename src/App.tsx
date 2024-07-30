@@ -12,7 +12,7 @@ const App = () => {
   const loadUsers = async () => {
     const result = await exampleAPI.getAllUsers();
     // dispatch({ type: "USERS_SET_USER_LIST", payload: result});
-    dispatch(usersAction.setUserList(result));
+    if (result.status === 200) dispatch(usersAction.setUserList(result.data));
   };
 
   useEffect(() => {
